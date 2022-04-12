@@ -1,0 +1,3 @@
+[build]
+command = "python manage.py runserver"
+publish = "out"
