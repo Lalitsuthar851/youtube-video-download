@@ -1,1 +1,1 @@
-web: gunicorn newspaper_features.wsgi
+web: gunicorn vidoe_downloader.wsgi
