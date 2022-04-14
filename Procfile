@@ -1,1 +1,1 @@
-web: gunicorn vidoe_downloader.wsgi
+web: gunicorn video_downloader.wsgi
