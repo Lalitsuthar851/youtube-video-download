@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-#hmq!s7z%+gc&7kry4uhhhnef&q6)=(9pqgmim-x+4^+i4m5%+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["ytvideo-downloder.herokuapp.com"]
 
 
 # Application definition

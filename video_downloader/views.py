@@ -19,7 +19,7 @@ def home(request,
         if type == "audio":
             data = YouTube("https://www.youtube.com/watch?v=UnVyNh6P6FQ",
                            ).streams.get_highest_resolution()
-            # YouTube(str(link)).streams.filter(type=str(type)).first().download()
+            YouTube(str(link)).streams.filter(type=str(type)).first().download()
             print(str(data)[41:51])
             print(str(data)[46:49])
 
@@ -32,7 +32,7 @@ def home(request,
             high_quality = YouTube(str(link)).streams.get_highest_resolution()
             print(high_quality)
             if int(Video_quality[:-1]) <= int(str(high_quality)[46:49]):
-                # YouTube(str(link)).streams.filter(res=Video_quality).first().download()
+                YouTube(str(link)).streams.filter(res=Video_quality).first().download()
                 return render(request,
                               "download.html",
                               {"type":str(type).upper()},
